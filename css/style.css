@@ -1,0 +1,61 @@
+body {
+    background-color: #2FA85A;
+    margin: 0;
+}
+
+#container > div{
+    text-align: center;
+}
+
+#title {
+    /* text-align: center; Centrar horizontalmente el texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar verticalmente los elementos */
+    justify-content: center; /* Centrar verticalmente los elementos */
+    /* height: 100vh; Opcional: hacer que el contenedor ocupe toda la altura de la ventana */
+    color: white;
+    background-color: #484041;
+    margin-bottom: 25px;
+  }
+
+#arquero div {
+    margin-bottom: 25px;
+}
+
+#defensas div {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+#medioCampoDefensivo div {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#medioCampoOfensivo div {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+input {
+    border-radius: 20px;
+}
+
+.oculto {
+    display: none;
+    color: lightblue;
+    font-size: 25px;
+}
+
+
+

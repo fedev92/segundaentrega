@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Entrega</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    
+    <div id="title">
+        <h1 id="titulo">Nombre a la seleccion uruguaya</h1>
+        <p>Tenes 3 oportunidades por posicion</p>
+    </div>
+
+    <div id="container"> 
+        <div id="arquero">
+            <label for="arquero">Arquero:</label><br>
+            <input type="text" id="gk" name="arquero">
+            <button id="consultar" onclick="respuestaArquero()">OK</button>
+            <div id="respuesta-correcta" class="oculto"></div>
+        </div><br>
+        
+        <div id="defensas">
+            <div>
+                <label for="li">Defensas:</label><br>
+                <input type="text" id="li" name="lIzquierdo">
+                <button onclick="comprobarPosicionDefensas()">OK</button>
+            </div>
+            <div>
+                <label for="zIzquierdo">Zaguero izquierdo:</label><br>
+                <input type="text" id="cbl" name="zIzquierdo">
+                <button onclick="comprobarPosicionDefensas()">OK</button>
+            </div>
+            <div>
+                <label for="zDerecho">Zaguero derecho:</label><br>
+                <input type="text" id="cbr" name="zDerecho">
+                <button onclick="comprobarPosicionDefensas()">OK</button>
+            </div>
+            <div>
+                <label for="lDerecho">Lateral derecho:</label><br>
+                <input type="text" id="lr" name="lDerecho">
+                <button onclick="comprobarPosicionDefensas()">OK</button>
+            </div>
+        </div>
+
+        <div id="medioCampoDefensivo">
+            <div>
+                <label for="medioCampoDefensaIzquierdo">Medio campo defensivo izquierdo:</label><br>
+                <input type="text" id="dml" name="medioCampoDefensaIzquierdo">
+                <button onclick="respuesta()">OK</button>
+            </div>
+            <div>
+                <label for="medioCampoDefensaDerecho">Medio campo defensivo derecho:</label><br>
+                <input type="text" id="dmr" name="medioCampoDefensaDerecho">
+                <button onclick="respuesta()">OK</button>
+            </div>
+        </div>
+
+        <div id="medioCampoOfensivo">
+            <div>
+                <label for="medioCampoAtaqueIzquierdo">Medio campo ataque izquierdo:</label><br>
+                <input type="text" id="lw" name="medioCampoAtaqueIzquierdo">
+                <button onclick="respuesta()">OK</button>
+            </div>
+            <div>
+                <label for="medioCampoAtaqueCentro">Medio campo ataque centro:</label><br>
+                <input type="text" id="am" name="medioCampoAtaqueCentro">
+                <button onclick="respuesta()">OK</button>
+            </div>
+            <div>
+                <label for="medioCampoAtaqueDerecho">Medio campo ataque derecho:</label><br>
+                <input type="text" id="rw" name="medioCampoAtaqueDerecho">
+                <button onclick="respuesta()">OK</button>
+            </div>
+        </div>
+
+        <div>
+            <label for="delantero">Delantero:</label><br>
+            <input type="text" id="cf" name="delantero">
+            <button onclick="respuesta()">OK</button>
+        </div>
+    </div>
+
+</body>
+</html>
